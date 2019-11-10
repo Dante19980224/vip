@@ -1,0 +1,38 @@
+[
+    {
+        "label": 1,
+        "answer": "trapezius"
+    },
+    {
+        "label": 2,
+        "answer": "deltoid"
+    },
+    {
+        "label": 3,
+        "answer": "latissimus dorsi"
+    },
+    {
+        "label": 4,
+        "answer": "levator scapulae"
+    },
+    {
+        "label": 5,
+        "answer": "suspraspinatus"
+    },
+    {
+        "label": 6,
+        "answer": "infraspinatus"
+    },
+    {
+        "label": 7,
+        "answer": "teres minor"
+    },
+    {
+        "label": 8,
+        "answer": "teres major"
+    },
+    {
+        "label": 9,
+        "answer": "rhomboideus major"
+    }
+]
