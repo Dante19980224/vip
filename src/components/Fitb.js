@@ -23,11 +23,6 @@ class Fitb extends Component {
         answer: back_muscleData
     });
   }
-  // replc(lst, i, nv){
-  //   let x = lst;
-  //   x[i] = nv;
-  //   return x;
-  // }
   handleSubmit(event){
     event.preventDefault();
     console.log('this.state is: ', this.state);
@@ -54,7 +49,7 @@ class Fitb extends Component {
     this.setState({
       inputlst: nl
     })
-    console.log('after change: ', this.state.inputlst);
+    // console.log('after change: ', this.state.inputlst);
   }
   render() {
     let body = null;
@@ -62,18 +57,11 @@ class Fitb extends Component {
     let lst = [];
     let label;
     for(label = 1; label <= this.state.answer.length; label++){
-        // lst.push(<b>({label}): </b>,<input type="text" name={'l'+label} placeholder="enter here" />, <br/>)
-        console.log("label is: ", label);
-        lst.push(<b key={'b'+label}>({label}): </b>,<input type="text" key={label} id={label} name={label} value={this.state.inputlst[label-1]} onChange={
-          // ( e => 
-          //   this.setState({
-          //     inputlst: this.replc(this.state.inputlst, (label-1), e.target.value)
-          //   }, () => {
-          //     console.log('label '+label+': ',e.target);
-          //   })
-          // )
-          this.handleChange.bind(this)
-        } placeholder="enter here" />, <br key={'br'+label} />)
+        lst.push(<b key={'b'+label}>({label}): </b>,
+          <input type="text" key={label} id={label} name={label} value={this.state.inputlst[label-1]} onChange={
+            this.handleChange.bind(this)
+          } placeholder="enter here" />, 
+          <br key={'br'+label} />)
     }
     body = (
       <div>
