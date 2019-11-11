@@ -13,6 +13,9 @@ class App extends Component {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to V.I.P.</h1>
+            <Link className="showlink" to="/cards">
+              Browse Cards
+            </Link>
             <Link className="showlink" to="/fill-in-the-blank">
               Fill in the Blanks
             </Link>
@@ -21,6 +24,7 @@ class App extends Component {
           <br />
           <div className="App-body">
             <p>Vocabulary Improvement Program</p>
+            <Route path="/cards/" component={VIPContainer} />
             <Route path="/fill-in-the-blank/" component={VIPContainer} />
           </div>
         </div>

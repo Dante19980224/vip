@@ -1,5 +1,5 @@
-const back_muscleData = require("./Fitb/back_muscle");
+const fcs = require("./Flashcards");
 
 module.exports = {
-  back_muscle: back_muscleData
+  flashcards: fcs
 };

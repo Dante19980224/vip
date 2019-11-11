@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-// import noImage from "../img/download.jpeg";
-import back_muscle_img from "../data/Fitb/img/back_muscle_fitb.jpeg"
+import back_muscle_img from "../data/img/back_muscle.jpeg";
 const data = require("../data");
-const back_muscleData = data.back_muscle;
+const cards = data.flashcards;
 
 class Fitb extends Component {
   constructor(props) {
@@ -15,20 +14,27 @@ class Fitb extends Component {
   }
   componentWillMount() {
     this.getPart();
-    console.log('init inputlist: ', this.state.inputlst);
   }
 //   as for now this will only get back_muscle. In the future, could add more flashcards or whatnot and randomly select one
   getPart() {
+    let ak;
+    let i;
+    for(i=0; i < cards.length; i++){
+      if(cards[i].cardname === 'back_muscle'){
+        ak=cards[i].answerkey;
+        break;
+      }
+    }
     this.setState({
-        answer: back_muscleData
+        answer: ak
     });
   }
   handleSubmit(event){
     event.preventDefault();
-    console.log('this.state is: ', this.state);
+    // console.log('this.state is: ', this.state);
     let rightanswer = this.state.answer;
     let myanswer = this.state.inputlst;
-    console.log("myasnwer is :", myanswer);
+    // console.log("myasnwer is :", myanswer);
     let i;
     let score = 0;
     for(i in rightanswer){
