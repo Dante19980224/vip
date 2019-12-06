@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import back_muscle_img from "../data/img/back_muscle.jpeg";
 import leg_muscle_img from "../data/img/leg_muscle.jpeg";
+import arm_muscle_img from "../data/img/arm_muscle.jpeg";
 // const path = require('path');
 // path.dirname('/foo/bar/baz/asdf/quux')
 const data = require("../data");
@@ -44,6 +45,8 @@ class Card extends Component {
       currp = back_muscle_img;
     } else if (currentcard === "leg_muscle_img") {
       currp = leg_muscle_img;
+    } else {
+      currp = arm_muscle_img;
     }
     let img = <img alt="fitb_img" src={currp} />;
     // let img = <img alt="fitb_img" src={this.getimg(cid).src} />;

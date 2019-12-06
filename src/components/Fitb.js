@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import back_muscle_img from "../data/img/back_muscle.jpeg";
 import leg_muscle_img from "../data/img/leg_muscle.jpeg";
+import arm_muscle_img from "../data/img/arm_muscle.jpeg";
 const data = require("../data");
 const cards = data.flashcards;
 
@@ -21,10 +22,10 @@ class Fitb extends Component {
 //   as for now this will only get back_muscle. In the future, could add more flashcards or whatnot and randomly select one
   getPart() {
     let ak;
-    let lim = Math.floor(Math.random() * 2);
+    let lim = Math.floor(Math.random() * 3);
     ak = cards[lim].answerkey;
     currentpic = cards[lim];
-    console.log(currentpic.cardname);
+    //console.log(currentpic.cardname);
     /*for(i=0; i < cards.length; i++){
       if(i === lim){
         ak=cards[i].answerkey;
@@ -72,6 +73,8 @@ class Fitb extends Component {
       currpho = back_muscle_img;
     } else if (currentpic.cardname === "leg_muscle") {
       currpho = leg_muscle_img;
+    } else {
+      currpho = arm_muscle_img;
     }
     let img = <img alt="fitb_img" src={currpho} />;
     let lst = [];
