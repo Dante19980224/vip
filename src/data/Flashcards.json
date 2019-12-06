@@ -81,5 +81,47 @@
                         "answer" : "Achilles tendon"
                     }
                 ]
+    },
+    {
+        "cardname" : "arm_muscle",
+        "id" : 3,
+        "answerkey" : [
+                    {
+                        "label" : "1A",
+                        "answer" : "Deltoid"
+                    },
+                    {
+                        "label" : "1E",
+                        "answer" : "Teres major"
+                    },
+                    {
+                        "label" : "1F",
+                        "answer" : "Subscapularis"
+                    },
+                    {
+                        "label" : "2A",
+                        "answer" : "Coracobrachialis"
+                    },
+                    {
+                        "label" : "2D",
+                        "answer" : "Triceps brachii"
+                    },
+                    {
+                        "label" : "3C",
+                        "answer" : "Extensor carpi radialis longus"
+                    },
+                    {
+                        "label" : "3F",
+                        "answer" : "Abductor pollicis longus"
+                    },
+                    {
+                        "label" : "3J",
+                        "answer" : "Extensor carpi ulnaris"
+                    },
+                    {
+                        "label" : " 3K",
+                        "answer" : "Flexor carpi ulnaris"
+                    }
+        ]
     }
 ]
