@@ -40,5 +40,46 @@
                         "answer": "rhomboideus major"
                     }
                 ]
+    },
+    {   "cardname" : "leg_muscle",
+        "id" : 2,
+        "answerkey":[
+                    {
+                        "label" : 1,
+                        "answer": "Peroneus longus"
+                    },
+                    {
+                        "label" : 2,
+                        "answer" : "Extensor digitorum longus"
+                    },
+                    {
+                        "label" : 3,
+                        "answer" : "Tibialis anterior"
+                    },
+                    {
+                        "label" : 4,
+                        "answer" : "Peroneus brevis"
+                    },
+                    {
+                        "label" : 5,
+                        "answer" : "Soleus"
+                    },
+                    {
+                        "label" : 6,
+                        "answer" : "Tibia"
+                    },
+                    {
+                        "label" : 7,
+                        "answer" : "Gastrocnemius"
+                    },
+                    {
+                        "label" : 8,
+                        "answer" : "Peroneus longus"
+                    },
+                    {
+                        "label" : 9,
+                        "answer" : "Achilles tendon"
+                    }
+                ]
     }
 ]
