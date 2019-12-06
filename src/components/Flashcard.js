@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import back_muscle_img from "../data/img/back_muscle.jpeg";
+import leg_muscle_img from "../data/img/leg_muscle.jpeg";
 // const path = require('path');
 // path.dirname('/foo/bar/baz/asdf/quux')
 const data = require("../data");
 const cards = data.flashcards;
+
+let currentcard;
 
 class Card extends Component {
   constructor(props) {
@@ -22,6 +25,7 @@ class Card extends Component {
     for(i=0; i < cards.length; i++){
       if(cards[i].id === Number(cid)){
         ak=cards[i].answerkey;
+        currentcard=cards[i].cardname;
         break;
       }
     }
@@ -34,7 +38,14 @@ class Card extends Component {
 //   }
   render() {
     let body = null;
-    let img = <img alt="fitb_img" src={back_muscle_img} />;
+    let currp;
+    currentcard = currentcard + "_img";
+    if (currentcard === "back_muscle_img") {
+      currp = back_muscle_img;
+    } else if (currentcard === "leg_muscle_img") {
+      currp = leg_muscle_img;
+    }
+    let img = <img alt="fitb_img" src={currp} />;
     // let img = <img alt="fitb_img" src={this.getimg(cid).src} />;
     let lst = [];
     let label;
