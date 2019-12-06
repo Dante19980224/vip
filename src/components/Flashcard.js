@@ -53,7 +53,7 @@ class Card extends Component {
     let lst = [];
     let label;
     for(label = 1; label <= this.state.data.length; label++){
-        lst.push(<b key={'b'+label}>({label}): {this.state.data[label-1].answer}</b>, 
+        lst.push(<b key={'b'+label}>{label}) {this.state.data[label-1].answer}</b>, 
           <br key={'br'+label} />)
     }
     body = (

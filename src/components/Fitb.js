@@ -80,7 +80,7 @@ class Fitb extends Component {
     let lst = [];
     let label;
     for(label = 1; label <= this.state.answer.length; label++){
-        lst.push(<b key={'b'+label}>({label}): </b>,
+        lst.push(<b key={'b'+label}>{label}) </b>,
           <input type="text" key={label} id={label} name={label} value={this.state.inputlst[label-1]} onChange={
             this.handleChange.bind(this)
           } placeholder="enter here" />, 
