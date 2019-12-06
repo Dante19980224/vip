@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./img/logo.svg";
 import "./App.css";
 import VIPContainer from "./components/vipContainer";
 
@@ -11,8 +10,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to V.I.P.</h1>
+            <h2 className="App-title">Vocabulary Improvement Program</h2>
             <Link className="showlink" to="/cards">
               Browse Cards
             </Link>
@@ -23,7 +22,6 @@ class App extends Component {
           <br />
           <br />
           <div className="App-body">
-            <p>Vocabulary Improvement Program</p>
             <Route path="/cards/" component={VIPContainer} />
             <Route path="/fill-in-the-blank/" component={VIPContainer} />
           </div>

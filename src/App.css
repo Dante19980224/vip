@@ -9,7 +9,7 @@
 
 .App-header {
    background-color: #1e8678;
-   height: 175px;
+   height: 140px;
    padding: 20px;
    color: #222;
 }
@@ -53,8 +53,8 @@ col-md-4 {
 .showlink {
    padding: 0.4rem 0.8rem;
    background-color: white;
-   border-radius: 3px;
-   color: #1e8678;
+   border-radius: 10px;
+   color: #000000;
    text-decoration: none !important;
 }
 
